@@ -26,39 +26,39 @@ public class Main {
         System.out.println("Break all letter to number:");
         int sum=0;
         int num = 0;
-        for(int i=0; i<letter.length;++i){
-            switch (letter[i]){
-                case 'A', 'J','S' :
-                    num=1;
+        for (char c : letter) {
+            switch (c) {
+                case 'A', 'J', 'S':
+                    num = 1;
                     break;
-                case 'B', 'K','T' :
-                    num=2;
+                case 'B', 'K', 'T':
+                    num = 2;
                     break;
-                case 'C', 'L','U' :
-                    num=3;
+                case 'C', 'L', 'U':
+                    num = 3;
                     break;
-                case 'D', 'M','V' :
-                    num=4;
+                case 'D', 'M', 'V':
+                    num = 4;
                     break;
-                case 'E', 'N','W' :
-                    num=5;
+                case 'E', 'N', 'W':
+                    num = 5;
                     break;
-                case 'F', 'O','X' :
-                    num=6;
+                case 'F', 'O', 'X':
+                    num = 6;
                     break;
-                case 'G', 'P','Y' :
-                    num=7;
+                case 'G', 'P', 'Y':
+                    num = 7;
                     break;
-                case 'H', 'Q','Z' :
-                    num=8;
+                case 'H', 'Q', 'Z':
+                    num = 8;
                     break;
-                case 'I', 'R' :
-                    num=9;
+                case 'I', 'R':
+                    num = 9;
                     break;
                 default:
             }
             System.out.print(num + ",");
-            sum+=num;
+            sum += num;
         }
         System.out.println("\b");
         System.out.println("Sum is : " + sum);
